@@ -1,0 +1,166 @@
+.homepage {
+    background-image: url("../../assets/images/Home.png");
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.homepage h1 {
+    position: absolute;
+    color: #ffb8ad;
+    font-size: 3rem;
+    top: 22%;
+    left: 33%;
+}
+
+.homepage .name {
+    width: 20%;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.homepage .hit {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+.homepage .curve {
+    position: absolute;
+    width: 100vw;
+    height: 20%;
+    bottom: 0%;
+}
+
+.aboutus {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f2b5b5;
+}
+
+.gradient1 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    opacity: 80%;
+}
+
+.aboutus h1 {
+    position: absolute;
+    font-size: 4rem;
+    top: 10%;
+    left: 42.5%;
+    color: #650808;
+    font-weight: 800;
+}
+
+.aboutus-content {
+    position: absolute;
+    width: 50%;
+    top: 23%;
+    left: 26%;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #650808;
+    font-weight: 300;
+}
+
+.button button {
+    color: #f2b5b5;
+    background-color: #650808;
+    padding: 1%;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 45%;
+    left: 46%;
+    width: 10%;
+    border-radius: 2rem;
+    border: none;
+}
+
+.cards {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40%;
+}
+
+.cards .card {
+    width: 18%;
+    height: 100%;
+    background-color: antiquewhite;
+    border-radius: 10%;
+    box-shadow: 0px 0px 15px #650808;
+}
+
+.cards .one,
+.five {
+    margin-top: 2%;
+}
+
+.cards .two,
+.four {
+    margin-top: 7%;
+}
+
+.cards .three {
+    margin-top: 12%;
+}
+
+
+.gallery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.gallery .gallery-contents {
+    width: 50%;
+    height: 100vh;
+    background-color: #650808;
+}
+
+.gallery-contents h1 {
+    font-size: 5rem;
+    color: #f2b5b5;
+    position: absolute;
+    top: 15%;
+    left: 12%;
+}
+
+.gallery-contents p {
+    width: 40%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #f2b5b5;
+    position: absolute;
+    top: 35%;
+}
+
+.gallery-contents button {
+    position: absolute;
+    padding: 11px;
+    width: 9%;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: #f2b5b5;
+    color: #650808;
+    top: 55%;
+    left: 15%;
+}
+
+.gallery img {
+    height: 101.9%;
+    width: 75%;
+}

@@ -1,0 +1,12 @@
+.Almanac-home{
+    background-color: #650808;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.Almanac-home img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+}
