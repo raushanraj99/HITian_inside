@@ -6,17 +6,20 @@ import Merchandise from '../pages/Merchandise/Merchandise'
 import Team from '../pages/Team/Team'
 
 import {Routes, Route} from 'react-router-dom'
+import PageNotFound from '../pages/PageNotFound'
 
 function Routers() {
   return (
     <div>   
         <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/home' element={<Home/>}/>
-            <Route path='/almanac' element={<Almanac/>}/>
-            <Route path='/events' element={<Events/>}/>
-            <Route path='/merchandise' element={<Merchandise/>}/>
-            <Route path='/team' element={<Team/>}/>
+          
+            <Route exact path='/' element={<Home/>}/>
+            <Route exact path='/home' element={<Home/>}/>
+            <Route exact path='/almanac' element={<Almanac/>}/>
+            <Route exact path='/events' element={<Events/>}/>
+            <Route exact path='/merchandise' element={<Merchandise/>}/>
+            <Route exact path='/members' element={<Team/>}/>
+            <Route exact path='*' element={<PageNotFound/>}></Route>
             
         </Routes>
 

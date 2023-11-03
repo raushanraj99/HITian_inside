@@ -1,0 +1,20 @@
+.events-home{
+    padding: 3%;
+    width: 100vw;
+    background-color: #650808;
+}
+
+.Events-cards{
+    padding:5% 5%;
+}
+.event-card{
+    box-shadow: 0px 4px 5px #7e3939;
+    /* width: 90%; */
+    margin: 0 auto;
+}
+
+.event-heading{
+    font-size: 3rem;
+    color: #fdd0d0;
+    font-weight: 700;
+}

@@ -3,6 +3,7 @@ import Header from '../components/Header/Header'
 import Routers from '../routes/Routers'
 import Footer from '../components/Footer/Footer'
 
+
 function Layout() {
   return (
     <div>
@@ -11,8 +12,7 @@ function Layout() {
             <Routers/>
         </main>
         <Footer/>
-
-
+        
     </div>
   )
 }

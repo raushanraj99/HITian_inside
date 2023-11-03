@@ -1,3 +1,9 @@
+*{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
 .Almanac-home{
     background-color: #650808;
     height: 100vh;
@@ -9,4 +15,56 @@
     bottom: 0;
     right: 0;
     width: 50%;
+}
+.Almanac-home .home-contents{
+    width: 50%;
+    position: absolute;
+    top: 15%;
+}
+.home-contents h1{
+    font-size: 6rem;
+    font-weight: bolder;
+    color: #f2b5b5;
+}
+
+.home-contents p{
+    margin: 5% 0 5% 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f2b5b5;
+}
+.home-contents button{
+    background-color: #f2b5b5;
+    color: #650808;
+    font-size: 1.5rem;
+    padding: 1.5%;
+    border-radius: 50px;
+}
+
+/* Almanac home end  */
+
+.Almanac-section{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+.Almanac-section .backgrounds{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -2;
+    
+}
+
+.Almanac-cards{
+    padding:5% 5%;
+    height: 108%;
+    width: 80%;
+}
+.Almanac-card{
+    /* background-color: #E79797; */
+    box-shadow: 0px 4px 5px #7e3939;
+    /* width: 90%; */
+    margin: 0 auto;
 }
