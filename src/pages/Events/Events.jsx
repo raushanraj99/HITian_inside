@@ -29,7 +29,7 @@ function Events() {
         {/* <div className="events-list"> */}
           <div className="Events-cards grid grid-cols-3 gap-8 ms-5 me-5">
             {events.map((event, index) => (
-              <div class="event-card rounded-lg col-span-3 md:col-span-1 ms-5 me-5  bg-[#a81f1f] ">
+              <div class="event-card rounded-lg col-span-3 md:col-span-1 ms-5 me-5  bg-[#892828] ">
                 <img
                   src={event.img_url}
                   className=" rounded-t-lg"

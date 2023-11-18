@@ -25,7 +25,7 @@ function Home() {
 
       {/* About us */}
 
-      <section className="aboutus bg-gradient-to-b from-[#FFB5B5] to-[#A95454] ">
+      <section className="aboutus h-fit bg-gradient-to-b from-[#FFB5B5] to-[#A95454] md:h-screen">
         {/* <img src={grad1} alt="gradient" className="gradient1" /> */}
         <h1 className="text-3xl/[3rem] md:text-5xl/[3rem] aboutus-title font-medium text-[#650808] pt-10">
           About us
@@ -45,21 +45,21 @@ function Home() {
             </button>
           </Link>
         </div>
-        <div className="cards mt-20 grid grid-cols-1 md:grid-cols-5 gap-4 justify-between h-full ">
-          <div className="card one rounded-r-md m-3 md:m-0">
-            <img src={testImg} alt="" />
+        <div className="cards mt-20 grid grid-cols-1 md:grid-cols-5 gap-4 justify-between">
+          <div className="card one rounded-md m-3 md:m-0 h-fit">
+            <img src={testImg} className="rounded-md" alt="" />
           </div>
-          <div className="card two rounded-md m-3 md:m-0">
-            <img src={testImg} alt="" />
+          <div className="card two rounded-md m-3 md:mt-8 h-fit">
+            <img src={testImg} className="rounded-md" alt="" />
           </div>
-          <div className="card three rounded-md m-3 md:m-0">
-            <img src={testImg} alt="" />
+          <div className="card three rounded-md m-3 md:mt-16 h-fit">
+            <img src={testImg} className="rounded-md" alt="" />
           </div>
-          <div className="card four rounded-md m-3 md:m-0">
-            <img src={testImg} alt="" />
+          <div className="card four rounded-md m-3 md:mt-8 h-fit">
+            <img src={testImg} className="rounded-md" alt="" />
           </div>
-          <div className="card five rounded-l-md m-3 md:m-0">
-            <img src={testImg} alt="" />
+          <div className="card five rounded-md m-3 md:m-0 h-fit">
+            <img src={testImg} className="rounded-md md:rounded-l-md"alt="" />
           </div>
         </div>
       </section>
@@ -67,7 +67,7 @@ function Home() {
       {/* <Gallery/> */}
       <section className="gallery grid grid-cols-5">
         <div className="gallery-contents bg-[#660909] col-span-5 md:col-span-2 ">
-          <p className="text-5xl/[2] text-[#FFB5B5] font-semibold flex flex-col md:mt-[12rem] mt-[2rem] ">
+          <p className="text-5xl/[2] text-[#FFB5B5] font-semibold flex flex-col md:mt-[18rem] mt-[2rem] ">
             Gallery
           </p>
           <p className="mt-10 ps-10 pe-10 text-[#FFB5B5] font-medium">
@@ -86,7 +86,7 @@ function Home() {
           <img
             src={collage}
             alt="insideGallery"
-            className=" md:w-[100%] w-full h-fit md:h-[100%]"
+            className=" md:w-[100%] w-full h-full md:h-full"
           />
         </div>
       </section>
