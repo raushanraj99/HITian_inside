@@ -1,7 +1,6 @@
-import { useEffect, useRef } from "react";
 // import "./header.css";
 import logo from "../../assets/images/logo.png";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const navLinks = [
   {
@@ -21,9 +20,13 @@ const navLinks = [
     display: "Merchandise",
   },
   {
-    path: "/members",
-    display: "About",
+    path: "/team",
+    display: "Team",
   },
+  {
+    path:"/about",
+    display:"About"
+  }
 ];
 
 function Header() {

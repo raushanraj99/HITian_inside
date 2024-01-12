@@ -4,7 +4,7 @@ import Almanac from '../pages/Almanac/Almanac'
 import Events from '../pages/Events/Events'
 import Merchandise from '../pages/Merchandise/Merchandise'
 import Team from '../pages/Team/Team'
-
+import About from '../pages/About/About'
 import {Routes, Route} from 'react-router-dom'
 import PageNotFound from '../pages/PageNotFound'
 
@@ -18,7 +18,8 @@ function Routers() {
             <Route exact path='/almanac' element={<Almanac/>}/>
             <Route exact path='/events' element={<Events/>}/>
             <Route exact path='/merchandise' element={<Merchandise/>}/>
-            <Route exact path='/members' element={<Team/>}/>
+            <Route exact path='/team' element={<Team/>}/>
+            <Route exact path='/about' element={<About/>}/>
             <Route exact path='*' element={<PageNotFound/>}></Route>
             
         </Routes>

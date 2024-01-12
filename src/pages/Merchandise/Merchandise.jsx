@@ -25,9 +25,7 @@ function Merchandise() {
           <p>Raushan Raj : XXXXXXXXXX</p>
 
           </div>
-
           </div>
-
         </div>
         
       </div>
