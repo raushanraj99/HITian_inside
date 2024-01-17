@@ -36,7 +36,7 @@ function Header() {
   const[navbarOpen, setNavbarOpen] = useState("hiddenbox");
 
   const changeStyle = ()=>{
-    console.log(navbarOpen)
+    // console.log(navbarOpen)
     if(navbarOpen !=="hiddenbox") setNavbarOpen("hiddenbox");
     else setNavbarOpen("openbox")
   }
