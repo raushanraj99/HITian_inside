@@ -81,7 +81,7 @@ function Almanac() {
           </p>
           <Link to="https://bit.ly/AlmanacSubmission2k24" target="_blank">
           <button type="submit" className="mt-5 text-[#650808] font-bold bg-[#fdd0d0] text-[.9rem] md:text-[1.3rem] w-[120px] h-[38px] md:w-[160px] md:h-[45px] rounded-[50px]
-          ">Submit Here</button>
+           hover:scale-125 transition-all duration-700">Submit Here</button>
           </Link>
 
         </div>

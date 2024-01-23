@@ -16,6 +16,11 @@ import img3 from "../../assets/images/best_of_almanac/Durba_Chattopadhyay_CHE.jp
 import img4 from "../../assets/images/best_of_almanac/Md Kaif_CSE_CS.jpg"
 import img5 from "../../assets/images/best_of_almanac/Mrinmoyee Sil_CSE.jpg"
 
+// recruitment 
+import recruitmentbanner from "../../assets/images/recruitment/recuritment_header.png"
+import recruitmentposter from "../../assets/images/recruitment/Recruitment_poster.png"
+
+
 function Home() {
 
   return (
@@ -23,7 +28,29 @@ function Home() {
       {/* ============ Landing Page ============= */}
 
       <section className="homepage bg-[#650808] justify-center ">
-        <div className="text-2xl/[2.3rem] md:text-[2.2rem] pt-[30%] md:pt-10 comeExplore font-semibold text-[#ffa6a6]">
+         {/* recruitment poster  */}
+         {/* <div className="recruitment pt-3 ">
+          <a href="#recruitmentsection" className=" flex justify-center ">
+            <img src={recruitmentbanner} alt="banner" className="" />
+          </a>
+         </div> */}
+
+         <div class="w-full  md:h-[450px] h-20 bg-fixed bg-contain  bg-center flex justify-center items-center opacity-60"
+        style={{ backgroundImage: `url(${recruitmentbanner})` }}>
+      {/* <h1 class=" drop-shadow-md  md:text-8xl text-1xl italic font-extrabold text-[white] bg-[#660909] p-2"></h1> */}
+      <Link to="/team" className='ms-5' >
+            <button className="bg-[#650808] font-bold text-[#ffffff] md:text-[2rem] text-[.7rem] md:w-[250px] w-[78px] md:h-[70px] h-[28px] rounded-[50px] hover:scale-125 transition-all duration-700">
+              checkout
+            </button>
+          </Link>
+    </div>
+
+
+
+
+
+
+        <div className="text-2xl/[2.3rem] md:text-[2.2rem] pt-[20%] md:pt-10 comeExplore font-semibold text-[#ffa6a6]">
           COME AND EXPLORE
         </div>
         <img src={name} alt="name" className="name inline w-[30%]" />
@@ -37,6 +64,7 @@ function Home() {
       </section>
       
       {/* About us */}
+      
 
       <section className="aboutus bg-gradient-to-b from-[#FFB5B5] to-[#A95454] ">
         {/* <img src={grad1} alt="gradient" className="gradient1" /> */}
@@ -44,7 +72,7 @@ function Home() {
           About us
         </h1>
         <div className="aboutus-content inline">
-          <p className="text-lg mt-7 md:mt-10 ps-[20%] pe-[20%] text-[#650808] font-bold">
+          <p className="text-lg mt-7 md:mt-10 md:px-[20%] px-[3%] text-[#650808] font-bold">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut dicta
             culpa pariatur qui consectetur dolor quasi, illum vero nam
             molestiae. Molestiae exercitationem doloremque molestias ullam,
@@ -53,11 +81,27 @@ function Home() {
         </div>
         <div className="button mt-10">
           <Link to="about">
-            <button className="text-[#FFB5B5] font-semibold bg-[#650808] text-[1.3rem] w-[169px] h-[48px] rounded-[50px]	">
+            <button className="text-[#FFB5B5] font-semibold bg-[#650808] text-[1.3rem] w-[169px] h-[48px] rounded-[50px] hover:scale-125 transition-all duration-700	">
               Know More
             </button>
           </Link>
         </div>
+    
+
+    {/* // recruitment */}
+
+    <div className="banner mt-5 p-5" id="recruitmentsection">
+      <marquee behavior="alternate" direction="left">
+        <div className="px-20">
+        <Link to="team">
+          <h3 className="text-[3rem] text-[#650808] font-bold mt-3 md:mt-3 hover:scale-105 transition-all duration-700 ">WE ARE RECRUITING</h3>
+        </Link>
+        </div>
+      </marquee>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4RxyUj_laFiecBYONwinvLuXDnO2D54ZGYpB_LbggEqFGvA/viewform" target="_blank" className="">  {/* google form link */}
+          <img src={recruitmentposter} alt="recruitment poster" className="mt-5 border-red-600" />
+      </a>
+    </div>
     
 
         <div className="cards mt-20 grid grid-cols-1 md:grid-cols-5 gap-4 justify-between h-full ">
@@ -78,7 +122,6 @@ function Home() {
           </div>
         </div>
       </section>
-
       {/* <Gallery/> */}
       <section className="gallery grid grid-cols-5">
         <div className="gallery-contents bg-[#660909] col-span-5 md:col-span-2 ">
@@ -92,10 +135,11 @@ function Home() {
             amet voluptates magni?
           </p>
           <Link to="/almanac">
-            <button className="mt-10 mb-10 text-[#650808] font-bold bg-[#FFB5B5] text-[1.3rem] w-[150px] h-[45px] rounded-[50px]	">
+            <button className="mt-10 mb-10 text-[#650808] font-bold bg-[#FFB5B5] text-[1.3rem] w-[150px] h-[45px] rounded-[50px]	hover:scale-125 transition-all duration-700">
               See More
             </button>
           </Link>
+
         </div>
         <div className=" bordeertext md:col-span-3 col-span-5 bg-[#660909]">
           <img
@@ -136,7 +180,7 @@ function Home() {
           </ul>
           </div>
           <Link to="/events">
-            <button className="mt-10 mb-10 text-[#650808] font-bold bg-[#FFB5B5] text-[1.3rem] w-[150px] h-[45px] rounded-[50px]	">
+            <button className="mt-10 mb-10 text-[#650808] font-bold bg-[#FFB5B5] text-[1.3rem] w-[150px] h-[45px] rounded-[50px] hover:scale-125 transition-all duration-700">
               See More
             </button>
           </Link>
