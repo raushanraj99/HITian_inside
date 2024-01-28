@@ -46,7 +46,7 @@ function Header() {
      <div>
       <nav className="border-gray-200 bg-[#650808] dark:bg-[#650808] dark:border-[#650808]">
         <div className="max-w-screen-xl flex flex-wrap md:flex-nowrap items-center justify-between mx-auto p-4">
-          <a href="#" className="flex items-center ps-2 md:ps-5">
+          <a href="/" className="flex items-center ps-2 md:ps-5">
             <img
               src={logo} alt="INSIDE LOGO"
               className="h-8 mr-3"

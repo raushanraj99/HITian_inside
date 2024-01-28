@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 // all images are there, add only path and it will be active
 import aditi from "../../assets/images/best_of_almanac/Aditi_bera_IT.jpg"
@@ -21,53 +24,66 @@ const almanacs = [
     alt:"value",
     name: "Aditi bera",
     roll: "Information Technology",
+    aosSegment:"flip-right",
   },
   {
     img_url: aditya,
     alt:"value",
     name: "Aditya Raj",
     roll: "Information Technology",
+    aosSegment:"flip-left",
   },
   {
     img_url: ashwin,
     alt:"value",
     name: "Ashwini Kumar",
     roll: "Information Technology",
+    aosSegment:"zoom-in",
   },
   {
     img_url: durba,
     alt:"value",
     name: "Durba Chattopadhyay",
     roll: "Chemical",
+    aosSegment:"flip-left",
   },
   {
     img_url: kaif,
     alt:"value",
     name: "Md Kaif",
     roll: "Cyber Security",
+    aosSegment:"zoom-in",
   },
   {
     img_url:mrin,
     alt:"value",
     name: "Mrinmoyee sil",
     roll: "Computer Science",
+    aosSegment:"flip-down",
   },
   {
     img_url: pushp,
     alt:"value",
     name: "Pushp Ranjan",
     roll: "Cyber Security",
+    aosSegment:"flip-right",
   },
   {
     img_url: satyam,
     alt:"value",
     name: "Satyam Kumar",
     roll: "Electronics and communication",
+    aosSegment:"flip-right",
   },
 ];
 
 
 function Almanac() {
+
+  useEffect(()=>{
+    AOS.init({duration:1700})
+  },[])
+
   return (
     <div className="bg-[#650808]">
       {/* ======== Almanac Section ========= */}
@@ -75,20 +91,20 @@ function Almanac() {
       <div className="ps-[10%] md:ps-[8%] pt-[5%]">
         <div className="w-[80vw] md:w-[43vw]">
 
-          <h1 className="text-[3rem] md:text-[5rem] text-[#fdd0d0] font-bold ">Almanac</h1>
-          <p className="text-[#f2b5b5] font-medium text-[1.2rem]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+          <h1 className="text-[3rem] md:text-[5rem] text-[#fdd0d0] font-bold " data-aos="slide-left">Almanac</h1>
+          <p className="text-[#f2b5b5] font-medium text-[1.2rem]" data-aos="slide-right">
+          Bringing to you the platform to unveil your astounding creativity through the official e-media of HIT. A platform to showcase your creativity in the form of your rhythmic poems, thrilling experiences, captured moments, beautiful arts, and animations, and glorify your ingenious talents by getting exposure through our Instagram handle.
           </p>
-          <Link to="https://bit.ly/AlmanacSubmission2k24" target="_blank">
+          <Link to="https://bit.ly/AlmanacSubmission2k24" target="_blank" >
           <button type="submit" className="mt-5 text-[#650808] font-bold bg-[#fdd0d0] text-[.9rem] md:text-[1.3rem] w-[120px] h-[38px] md:w-[160px] md:h-[45px] rounded-[50px]
-           hover:scale-125 transition-all duration-700">Submit Here</button>
+           hover:scale-125 transition-all duration-700" data-aos="slide-up">Submit Here</button>
           </Link>
 
         </div>
       </div>
 
         <div className="flex justify-end mt-[5%] md:mt-[-20%]">
-          <img src={almanac_img} alt="IMAGE" className="w-[80%] md:w-[65%]" />
+          <img src={almanac_img} alt="IMAGE" className="w-[80%] md:w-[65%]" data-aos="zoom-in"/>
         </div>
 
       <div className="Almanac-section flex flex-col justify-center bg-no-repeat bg-bottom " style={{ backgroundImage: `url(${almanac_background})` }}>
@@ -104,6 +120,7 @@ function Almanac() {
                   class="w-full h-full p-3"
                   src={almanac.img_url}
                   alt="Sunset in the mountains"
+                  data-aos={almanac.aosSegment}
                 />
                 </div>
                 <div class="px-6 py-2">
