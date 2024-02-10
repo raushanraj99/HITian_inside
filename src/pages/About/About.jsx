@@ -3,7 +3,8 @@ import React from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import background from "../../assets/images/recruitment/Recruitment_poster.png";
+// import background from "../../assets/images/recruitment/Recruitment_poster.png";
+import teamimg from '../../assets/aboutimage/team_image01.jpg'
 import { useEffect } from 'react';
 function About() {
   
@@ -16,10 +17,10 @@ function About() {
     <div className="h-full bg-[#660909] text-[white]">
       {/* Working on it on About page */}
       <div
-        class="w-full h-[450px] bg-fixed bg-cover bg-center flex justify-center items-center opacity-50"
-        style={{ backgroundImage: `url(${background})` }}
+        class="w-full h-[450px] bg-fixed bg-cover bg-center flex justify-center items-center opacity-80"
+        style={{ backgroundImage: `url(${teamimg})` }}
       >
-        <h1 class=" drop-shadow-md  md:text-8xl text-3xl italic font-extrabold text-[white] bg-[#660909] p-2">
+        <h1 class=" drop-shadow-md mb-20  md:text-6xl text-3xl italic font-extrabold text-[white] bg-[#660909] p-2">
           Welcome to the Maroon Squad
         </h1>
       </div>

@@ -77,11 +77,11 @@ function Home() {
 
       <section className="aboutus bg-gradient-to-b from-[#FFB5B5] to-[#A95454] ">
         {/* <img src={grad1} alt="gradient" className="gradient1" /> */}
-        <h1 className="text-3xl/[3rem] md:text-5xl/[3rem] aboutus-title font-medium text-[#650808] pt-10" data-aos="fade-down">
+        <h1 className="text-3xl/[3rem] md:text-5xl/[3rem] aboutus-title font-medium text-[#650808] pt-10" data-aos="fade-up">
           About us
         </h1>
         <div className="aboutus-content inline">
-          <p className="text-lg mt-7 md:mt-10 md:px-[20%] px-[3%] text-[#650808] font-bold" data-aos="slide-down">
+          <p className="text-lg mt-7 md:mt-10 md:px-[20%] px-[3%] text-[#650808] font-bold" data-aos="fade-up">
           The Maroon Squad, as the official media team of HIT, is a dynamic unit within the media club. Dedicated to keeping the campus community informed, it meticulously cover and present ongoing details about campus life.
           </p>
         </div>
@@ -134,7 +134,7 @@ function Home() {
           <p className="text-5xl/[2] text-[#FFB5B5] font-semibold flex flex-col md:mt-[12rem] mt-[2rem] " data-aos="slide-up">
             Gallery
           </p>
-          <p className="mt-10 ps-10 pe-10 text-[#FFB5B5] font-medium" data-aos="fade-down">
+          <p className="mt-10 ps-10 pe-10 text-[#FFB5B5] font-medium" data-aos="fade-up">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
             exercitationem odit debitis, veritatis, quidem rem molestias
             deserunt at nam dolore ab dolor, reprehenderit iste minima ipsum ut

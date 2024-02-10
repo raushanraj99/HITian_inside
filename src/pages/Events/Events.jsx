@@ -1,7 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 // import "./Events.css";
 import { InstagramEmbed } from "react-social-media-embed";
 import { FacebookEmbed } from "react-social-media-embed";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const Elist = [
   {
@@ -59,6 +63,11 @@ const Elist = [
 ];
 
 function Events() {
+
+  useEffect(()=>{
+    AOS.init({duration:1700})
+  },[])
+
   return (
     <div className="bg-[#650808] flex justify-center">
       <section className="events-home  pb-16 w-[80%]">
@@ -68,7 +77,7 @@ function Events() {
         {/* <div className="events-list"> */}
 
         {Elist.map((index) => (
-          <div>
+          <div data-aos="fade-up">
             <p className="text-start font-bold text-2xl ps-10 pb-5 text-[#fdd0d0]">
               {index.year}
             </p>
